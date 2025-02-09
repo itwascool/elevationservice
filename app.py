@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 app.debug = True
 
-elevation_file = '/Users/damirlutfullin/PycharmProjects/elevationservis/srtm_N55E160.tif'
+elevation_file = './srtm_N55E160.tif'
 def get_elevation(lat, lon):
     logger.info("Получение высоты для координат: lat=%f, lon=%f", lat, lon)
     coords = ((lon, lat), (lon, lat))
